@@ -1,0 +1,802 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20181.18.0416.1335                               -->
+<workbook source-build='2018.1.0 (20181.18.0416.1335)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SortTagCleanup />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='InvoiceDE' inline='true' name='federated.1cfowmo1mgml8p1h55b4x1iln424' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='InvoiceDE' name='textscan.07p0g120zetkfr1glxe7y1ecx9lv'>
+            <connection class='textscan' directory='/Users/zopper/Google Drive/GreatLakes Capstone Project/Retailers/03Salons/23752' filename='InvoiceDE.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.07p0g120zetkfr1glxe7y1ecx9lv' name='InvoiceDE.csv' table='[InvoiceDE#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='InvoiceID' ordinal='1' />
+            <column datatype='integer' name='UID' ordinal='2' />
+            <column datatype='datetime' name='InvoiceDate' ordinal='3' />
+            <column datatype='integer' name='ClientID' ordinal='4' />
+            <column datatype='integer' name='GrandTotal' ordinal='5' />
+            <column datatype='integer' name='StoreId' ordinal='6' />
+            <column datatype='boolean' name='IsCanceled' ordinal='7' />
+            <column datatype='integer' name='PaymentType' ordinal='8' />
+            <column datatype='string' name='CustomerName' ordinal='9' />
+            <column datatype='integer' name='CustomerMobileNo' ordinal='10' />
+            <column datatype='date' name='InvDate' ordinal='11' />
+            <column datatype='integer' name='IsValidData' ordinal='12' />
+            <column datatype='boolean' name='ValidNumber' ordinal='13' />
+            <column datatype='boolean' name='ValidBuyer' ordinal='14' />
+            <column datatype='string' name='InvMonthYr' ordinal='15' />
+            <column datatype='integer' name='Dec-GrandTotal' ordinal='16' />
+            <column datatype='integer' name='Qart-GrandTotal' ordinal='17' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[InvoiceDE.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;Rs&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[InvoiceDE.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InvoiceID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[InvoiceID]</local-name>
+            <parent-name>[InvoiceDE.csv]</parent-name>
+            <remote-alias>InvoiceID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[UID]</local-name>
+            <parent-name>[InvoiceDE.csv]</parent-name>
+            <remote-alias>UID</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InvoiceDate</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[InvoiceDate]</local-name>
+            <parent-name>[InvoiceDE.csv]</parent-name>
+            <remote-alias>InvoiceDate</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ClientID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ClientID]</local-name>
+            <parent-name>[InvoiceDE.csv]</parent-name>
+            <remote-alias>ClientID</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GrandTotal</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GrandTotal]</local-name>
+            <parent-name>[InvoiceDE.csv]</parent-name>
+            <remote-alias>GrandTotal</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StoreId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[StoreId]</local-name>
+            <parent-name>[InvoiceDE.csv]</parent-name>
+            <remote-alias>StoreId</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IsCanceled</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[IsCanceled]</local-name>
+            <parent-name>[InvoiceDE.csv]</parent-name>
+            <remote-alias>IsCanceled</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PaymentType</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PaymentType]</local-name>
+            <parent-name>[InvoiceDE.csv]</parent-name>
+            <remote-alias>PaymentType</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CustomerName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CustomerName]</local-name>
+            <parent-name>[InvoiceDE.csv]</parent-name>
+            <remote-alias>CustomerName</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CustomerMobileNo</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CustomerMobileNo]</local-name>
+            <parent-name>[InvoiceDE.csv]</parent-name>
+            <remote-alias>CustomerMobileNo</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InvDate</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[InvDate]</local-name>
+            <parent-name>[InvoiceDE.csv]</parent-name>
+            <remote-alias>InvDate</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IsValidData</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[IsValidData]</local-name>
+            <parent-name>[InvoiceDE.csv]</parent-name>
+            <remote-alias>IsValidData</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ValidNumber</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[ValidNumber]</local-name>
+            <parent-name>[InvoiceDE.csv]</parent-name>
+            <remote-alias>ValidNumber</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ValidBuyer</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[ValidBuyer]</local-name>
+            <parent-name>[InvoiceDE.csv]</parent-name>
+            <remote-alias>ValidBuyer</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InvMonthYr</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[InvMonthYr]</local-name>
+            <parent-name>[InvoiceDE.csv]</parent-name>
+            <remote-alias>InvMonthYr</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dec-GrandTotal</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Dec-GrandTotal]</local-name>
+            <parent-name>[InvoiceDE.csv]</parent-name>
+            <remote-alias>Dec-GrandTotal</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Qart-GrandTotal</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Qart-GrandTotal]</local-name>
+            <parent-name>[InvoiceDE.csv]</parent-name>
+            <remote-alias>Qart-GrandTotal</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='InvalidReason' datatype='string' name='[Calculation_2487324008597934080]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF ([ValidBuyer]== FALSE) THEN &quot;InvalidCustomer&quot;&#10;ELSEIF ([ValidNumber]= FALSE) THEN &quot;InvalidNumber&quot;&#10;ELSEIF ([IsValidData] = 2) THEN &quot;InvalidData&quot;&#10;ELSE &quot;ValidData&quot; END' />
+      </column>
+      <column caption='Client ID' datatype='integer' name='[ClientID]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Customer Mobile No' datatype='integer' name='[CustomerMobileNo]' role='dimension' type='ordinal' />
+      <column caption='Customer Name' datatype='string' name='[CustomerName]' role='dimension' type='nominal' />
+      <column caption='Grand Total (bin)' datatype='integer' name='[Grand Total (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='2' formula='[GrandTotal]' peg='0' size='200' />
+      </column>
+      <column caption='Grand Total' datatype='integer' name='[GrandTotal]' role='measure' type='quantitative' />
+      <column caption='Inv Date' datatype='date' name='[InvDate]' role='dimension' type='ordinal' />
+      <column caption='Inv Month Yr' datatype='string' name='[InvMonthYr]' role='dimension' type='nominal' />
+      <column caption='Invoice Date' datatype='datetime' name='[InvoiceDate]' role='dimension' type='ordinal' />
+      <column caption='Invoice ID' datatype='integer' name='[InvoiceID]' role='dimension' type='ordinal' />
+      <column caption='Is Canceled' datatype='boolean' name='[IsCanceled]' role='dimension' type='nominal' />
+      <column caption='Is Valid Data' datatype='integer' name='[IsValidData]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Payment Type' datatype='integer' name='[PaymentType]' role='measure' type='quantitative' />
+      <column caption='Store Id' datatype='integer' name='[StoreId]' role='dimension' type='ordinal' />
+      <column caption='Valid Buyer' datatype='boolean' name='[ValidBuyer]' role='dimension' type='nominal' />
+      <column caption='Valid Number' datatype='boolean' name='[ValidNumber]' role='dimension' type='nominal' />
+      <column-instance column='[Calculation_2487324008597934080]' derivation='None' name='[none:Calculation_2487324008597934080:nk]' pivot='key' type='nominal' />
+      <column-instance column='[InvoiceDate]' derivation='Weekday' name='[wd:InvoiceDate:ok]' pivot='key' type='ordinal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.574219' measure-ordering='alphabetic' measure-percentage='0.425781' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_2487324008597934080:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;InvalidCustomer&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;ValidData&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;InvalidNumber&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[wd:InvoiceDate:ok]' palette='blue_10_0' type='palette'>
+            <map to='#2a5783'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#3e6c99'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#5081ae'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#6798c1'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#7eaed3'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#9ac6e4'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>1</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Valid Distinct Numbers</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='InvoiceDE' name='federated.1cfowmo1mgml8p1h55b4x1iln424' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1cfowmo1mgml8p1h55b4x1iln424'>
+            <column aggregation='Sum' caption='Customer Mobile No' datatype='integer' name='[CustomerMobileNo]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Valid Number' datatype='boolean' name='[ValidNumber]' role='dimension' type='nominal' />
+            <column-instance column='[CustomerMobileNo]' derivation='CountD' name='[ctd:CustomerMobileNo:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ValidNumber]' derivation='None' name='[none:ValidNumber:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.1cfowmo1mgml8p1h55b4x1iln424].[none:ValidNumber:nk]' direction='DESC' using='[federated.1cfowmo1mgml8p1h55b4x1iln424].[sum:Number of Records:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='20' />
+            <format attr='cell-h' value='20' />
+            <format attr='cell' value='20' />
+            <format attr='cell-q' value='100' />
+            <format attr='width' value='76' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1cfowmo1mgml8p1h55b4x1iln424].[none:ValidNumber:nk]' value='116' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1cfowmo1mgml8p1h55b4x1iln424].[ctd:CustomerMobileNo:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7999999523162842' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1cfowmo1mgml8p1h55b4x1iln424].[none:ValidNumber:nk]</rows>
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Valid Identification</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='InvoiceDE' name='federated.1cfowmo1mgml8p1h55b4x1iln424' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1cfowmo1mgml8p1h55b4x1iln424'>
+            <column caption='InvalidReason' datatype='string' name='[Calculation_2487324008597934080]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ([ValidBuyer]== FALSE) THEN &quot;InvalidCustomer&quot;&#10;ELSEIF ([ValidNumber]= FALSE) THEN &quot;InvalidNumber&quot;&#10;ELSEIF ([IsValidData] = 2) THEN &quot;InvalidData&quot;&#10;ELSE &quot;ValidData&quot; END' />
+            </column>
+            <column caption='Is Valid Data' datatype='integer' name='[IsValidData]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Valid Buyer' datatype='boolean' name='[ValidBuyer]' role='dimension' type='nominal' />
+            <column caption='Valid Number' datatype='boolean' name='[ValidNumber]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_2487324008597934080]' derivation='None' name='[none:Calculation_2487324008597934080:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1cfowmo1mgml8p1h55b4x1iln424].[none:Calculation_2487324008597934080:nk]' />
+              <wedge-size column='[federated.1cfowmo1mgml8p1h55b4x1iln424].[sum:Number of Records:qk]' />
+              <size column='[federated.1cfowmo1mgml8p1h55b4x1iln424].[sum:Number of Records:qk]' />
+              <text column='[federated.1cfowmo1mgml8p1h55b4x1iln424].[sum:Number of Records:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='9' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='size' value='1.4832596778869629' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Distribution of Invoices over 7 Days</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='InvoiceDE' name='federated.1cfowmo1mgml8p1h55b4x1iln424' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1cfowmo1mgml8p1h55b4x1iln424'>
+            <column caption='Invoice Date' datatype='datetime' name='[InvoiceDate]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[InvoiceDate]' derivation='Weekday' name='[wd:InvoiceDate:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1cfowmo1mgml8p1h55b4x1iln424].[sum:Number of Records:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1cfowmo1mgml8p1h55b4x1iln424].[sum:Number of Records:qk]</rows>
+        <cols>[federated.1cfowmo1mgml8p1h55b4x1iln424].[wd:InvoiceDate:ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Distribution of Invoices over 24 hours</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='InvoiceDE' name='federated.1cfowmo1mgml8p1h55b4x1iln424' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1cfowmo1mgml8p1h55b4x1iln424'>
+            <column caption='Invoice Date' datatype='datetime' name='[InvoiceDate]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[InvoiceDate]' derivation='Hour' name='[hr:InvoiceDate:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1cfowmo1mgml8p1h55b4x1iln424].[hr:InvoiceDate:ok]' value='35' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1cfowmo1mgml8p1h55b4x1iln424].[sum:Number of Records:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1cfowmo1mgml8p1h55b4x1iln424].[sum:Number of Records:qk]</rows>
+        <cols>[federated.1cfowmo1mgml8p1h55b4x1iln424].[hr:InvoiceDate:ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Distribution of Invoice Amount</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='InvoiceDE' name='federated.1cfowmo1mgml8p1h55b4x1iln424' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1cfowmo1mgml8p1h55b4x1iln424'>
+            <column caption='Grand Total (bin)' datatype='integer' name='[Grand Total (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='2' formula='[GrandTotal]' peg='0' size='200' />
+            </column>
+            <column caption='Grand Total' datatype='integer' name='[GrandTotal]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[Grand Total (bin)]' derivation='None' name='[none:Grand Total (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1cfowmo1mgml8p1h55b4x1iln424].[none:Grand Total (bin):ok]'>
+            <groupfilter from='0' function='range' level='[none:Grand Total (bin):ok]' to='100' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1cfowmo1mgml8p1h55b4x1iln424].[none:Grand Total (bin):ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1cfowmo1mgml8p1h55b4x1iln424].[sum:Number of Records:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1cfowmo1mgml8p1h55b4x1iln424].[sum:Number of Records:qk]</rows>
+        <cols>[federated.1cfowmo1mgml8p1h55b4x1iln424].[none:Grand Total (bin):ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Weekly Average Invoice Amount</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='InvoiceDE' name='federated.1cfowmo1mgml8p1h55b4x1iln424' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1cfowmo1mgml8p1h55b4x1iln424'>
+            <column caption='Invoice Date' datatype='datetime' name='[InvoiceDate]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[InvoiceDate]' derivation='Week-Trunc' name='[twk:InvoiceDate:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.1cfowmo1mgml8p1h55b4x1iln424].[sum:Number of Records:qk]</rows>
+        <cols>[federated.1cfowmo1mgml8p1h55b4x1iln424].[twk:InvoiceDate:qk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='205'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1cfowmo1mgml8p1h55b4x1iln424].[none:Calculation_2487324008597934080:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.1cfowmo1mgml8p1h55b4x1iln424].[sum:Number of Records:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1cfowmo1mgml8p1h55b4x1iln424].[ctd:CustomerMobileNo:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='163'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1cfowmo1mgml8p1h55b4x1iln424].[sum:Number of Records:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1cfowmo1mgml8p1h55b4x1iln424].[sum:Number of Records:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+  </windows>
+</workbook>

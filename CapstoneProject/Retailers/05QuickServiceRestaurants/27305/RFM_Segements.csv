@@ -1,0 +1,28 @@
+﻿R,F,M,Segment,Description,Campaign
+3,3,3,Best Customers,"Customers who transacted recently, most frequently and spend the most.","Onboard them for a loyalty program, retain them."
+3,3,2,Loyal Customers,"Customers who transacted recently, and with high frequency.",Referral program. Gather feedback.
+3,3,1,Prospective Loyal,Customer who can be made loyal or big spender,Opportunity to upsell and cross-sell.
+2,3,3,Big Spenders,Customers with high spends,Opportunity to upsell and cross-sell.
+2,3,2,Churning Customer,"High value customer, but most likely about to churn.",Reactivation campaign aimed to drive repeat purchase
+2,3,1,Low value Lost Customers,Has not transacted in a long time and spend little.,Leave these Customers
+1,3,3,Churning Customer,"High value customer, but most likely about to churn.",Reactivation campaign aimed to drive repeat purchase
+1,3,2,Churning Customer,"High value customer, but most likely about to churn.",Reactivation campaign aimed to drive repeat purchase
+1,3,1,Low value Lost Customers,Has not transacted in a long time and spend little.,Leave these Customers
+3,2,3,Big Spenders,Customers with high spends,Opportunity to upsell and cross-sell.
+3,2,2,Prospective Loyal,Customer who can be made loyal or big spender,Opportunity to upsell and cross-sell.
+3,2,1,Prospective Loyal,Customer who can be made loyal or big spender,Opportunity to upsell and cross-sell.
+2,2,3,Big Spenders,Customers with high spends,Opportunity to upsell and cross-sell.
+2,2,2,Prospective Loyal,Customer who can be made loyal or big spender,Opportunity to upsell and cross-sell.
+2,2,1,Low value Lost Customers,Has not transacted in a long time and spend little.,Leave these Customers
+1,2,3,Big Spenders,Customers with high spends,Opportunity to upsell and cross-sell.
+1,2,2,Churning Customer,"High value customer, but most likely about to churn.",Reactivation campaign aimed to drive repeat purchase
+1,2,1,Low value Lost Customers,Has not transacted in a long time and spend little.,Leave these Customers
+3,1,3,Big Spenders,Customers with high spends,Opportunity to upsell and cross-sell.
+3,1,2,New Customer,Recently acquired customers,Personalized communication aimed to cross-sell.
+3,1,1,New Customer,Recently acquired customers,Personalized communication aimed to cross-sell.
+2,1,3,Big Spenders,Customers with high spends,Opportunity to upsell and cross-sell.
+2,1,2,Low value Lost Customers,Has not transacted in a long time and spend little.,Leave these Customers
+2,1,1,Low value Lost Customers,Has not transacted in a long time and spend little.,Leave these Customers
+1,1,3,Big Spenders,Customers with high spends,Opportunity to upsell and cross-sell.
+1,1,2,Low value Lost Customers,Has not transacted in a long time and spend little.,Leave these Customers
+1,1,1,Low value Lost Customers,Has not transacted in a long time and spend little.,Leave these Customers
